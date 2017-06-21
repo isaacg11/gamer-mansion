@@ -1,0 +1,20 @@
+<h2>Add Games</h2>
+<form>
+  <div class="form-group">
+    <label for="gameTitle">Game Title</label>
+    <input type="text" class="form-control" id="gameTitle"placeholder="Title" ng-model="controller.game.title" />
+  </div>
+  <div class="form-group">
+    <label for="gamePlatform">Game Platform/s</label>
+    <input type="text" class="form-control" id="gamePlatform" placeholder="Platforms/Systems" ng-model="controller.game.platform" />
+  </div>
+  <div class="form-group">
+    <label for="gameGenre">Game Genre</label>
+    <input type="text" class="form-control" id="gameGenre" placeholder="Genre" ng-model="controller.game.genre" />
+  </div>
+  <div class="form-group">
+    <label for="gameReview">Game Review</label>
+    <textarea type="text" class="form-control" id="gameReview" placeholder="Enter your review..." ng-model="controller.game.review" rows="10" cols="100"></textarea>
+  </div>
+    <button type="button" class="btn btn-default" ng-click="controller.addGame()">Add Game</button>
+</form>
